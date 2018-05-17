@@ -1,3 +1,5 @@
+// (c) 2018 Jordan Knight (jakkaj@gmail.com)
+// This code is licensed under MIT license (see LICENSE.txt for details)
 
 var fs = require('fs');
 
@@ -51,5 +53,5 @@ var yamlwriter = function(file, dryrun, optionsstring){
     }
 }
     
-export default yamlwriter;
+module.exports = yamlwriter;
 

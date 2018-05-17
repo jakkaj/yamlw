@@ -1,3 +1,9 @@
+#!/usr/bin/env node
+
+// (c) 2018 Jordan Knight (jakkaj@gmail.com)
+// This code is licensed under MIT license (see LICENSE.txt for details)
+
+
 var program = require('commander');
 var yamlwriter = require('./yamlwriter');
 
@@ -27,4 +33,4 @@ if (dry) {
     console.log("Doing a dry run");
 }
 
-yamlwriter(files, dry, set);
+yamlwriter(file, dry, set);
