@@ -22,11 +22,12 @@ var yamlwriter = function(file, dryrun, optionsstring){
         var splitted = lIn.split(',');
     
         for (let item of splitted) {
+
             var splitItem = item.split('.');
             var base = doc;
     
             for (let pathItem of splitItem) {
-    
+                pathItem = pathItem.trim();
                 if (pathItem == splitItem[splitItem.length - 1]) {
                     break;
                 }
