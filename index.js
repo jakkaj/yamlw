@@ -3,6 +3,8 @@
 // (c) 2018 Jordan Knight (jakkaj@gmail.com)
 // This code is licensed under MIT license (see LICENSE.txt for details)
 
+//example:
+//yw -f samples/sample2.yaml --set "build.number=23,something.else='skdlfjlksdf'"
 
 var program = require('commander');
 var yamlwriter = require('./yamlwriter');

@@ -5,6 +5,7 @@ var fs = require('fs');
 
 var yaml = require('js-yaml');
 
+
 var yamlwriter = function(file, dryrun, optionsstring){
     try {
 
@@ -16,8 +17,7 @@ var yamlwriter = function(file, dryrun, optionsstring){
             doc = {};
         }
     
-        //console.log(doc);
-        var lIn = optionsstring;//"build.number=21,something.else='skdlfjlksdf'";
+                var lIn = optionsstring;
         var splitted = lIn.split(',');
     
         for (let item of splitted) {
