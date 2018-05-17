@@ -7,7 +7,7 @@
 //yw -f samples/sample2.yaml --set "build.number=23,something.else='skdlfjlksdf'"
 
 var program = require('commander');
-var yamlwriter = require('./yamlwriter');
+var yamlwriter = require('./yamlw');
 
 program
     .version('0.1.0')

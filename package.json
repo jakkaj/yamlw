@@ -1,17 +1,17 @@
 {
-  "name": "vsts_build_output_yaml",
+  "name": "yamlw",
   "version": "1.0.0",
   "description": "A task to output YAML or JSON. Take build variables and write them to the build directory. Updates existing files or create them from scratch.",
   "main": "index.js",
   "bin": {
-    "yw": "index.js"
+    "yamlw": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jakkaj/vsts_build_output_yaml.git"
+    "url": "git+https://github.com/jakkaj/yamlw.git"
   },
   "keywords": [
     "VSTS",
@@ -22,11 +22,12 @@
   "author": "jakkaj",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jakkaj/vsts_build_output_yaml/issues"
+    "url": "https://github.com/jakkaj/yamlw/issues"
   },
-  "homepage": "https://github.com/jakkaj/vsts_build_output_yaml#readme",
+  "homepage": "https://github.com/jakkaj/yamlw#readme",
   "dependencies": {
     "commander": "^2.15.1",
+    "fs-extra": "^6.0.1",
     "js-yaml": "^3.11.0"
   }
 }

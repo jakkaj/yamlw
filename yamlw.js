@@ -2,7 +2,8 @@
 // This code is licensed under MIT license (see LICENSE.txt for details)
 
 var fs = require('fs');
-
+var fs = require("fs-extra");
+var path = require('path');
 var yaml = require('js-yaml');
 
 
@@ -45,6 +46,7 @@ var yamlwriter = function(file, dryrun, optionsstring){
         
         if(!dryrun){
             console.log(`Writing: ${file}`)
+            fs.ensureDirSync(path.dirname(file));
             fs.writeFileSync(file, d);
         }
         console.log(d);

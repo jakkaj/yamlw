@@ -9,4 +9,4 @@ outputs:
 build:
   number: 23
 something:
-  else: skdlfjlksdf
+  else: my value
