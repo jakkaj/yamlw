@@ -1,6 +1,6 @@
 {
   "name": "yamlw",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A task to output YAML or JSON. Take build variables and write them to the build directory. Updates existing files or create them from scratch.",
   "main": "yamlw.js",
   "bin": {
