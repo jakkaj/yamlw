@@ -19,15 +19,23 @@ var yamlwriter = function (file, dryrun, optionsstring) {
         }
 
         var lIn = optionsstring;
+
         var splitted = lIn.split(',');
 
         for (let item of splitted) {
+            if(item.indexOf('=')==-1){
+                break;
+            }
+            var splitEquals = item.split("=");
 
-            var splitItem = item.split('.');
+            var splitItem = splitEquals[0].split('.');
+           
             var base = doc;
 
             for (let pathItem of splitItem) {
+                
                 pathItem = pathItem.trim();
+                
                 if (pathItem == splitItem[splitItem.length - 1]) {
                     break;
                 }
