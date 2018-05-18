@@ -35,4 +35,6 @@ if (dry) {
     console.log("Doing a dry run");
 }
 
-yamlwriter(file, dry, set);
+var result = yamlwriter(file, dry, set);
+
+console.log(result);

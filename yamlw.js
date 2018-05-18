@@ -45,12 +45,13 @@ var yamlwriter = function(file, dryrun, optionsstring){
         
         var d = yaml.safeDump(doc);
         
-        if(!dryrun){
-            console.log(`Writing: ${file}`)
+        if(!dryrun){            
             fs.ensureDirSync(path.dirname(file));
             fs.writeFileSync(file, d);
         }
-        console.log(d);
+        //console.log(d);
+
+        return d;
     } catch (e) {
         console.log(e);
     }
