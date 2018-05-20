@@ -1,5 +1,9 @@
 # yamlw
 
+[Extension on the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=jakkaj.vsts-yaml-writer). 
+
+[YouTube video](https://www.youtube.com/watch?v=MavBLz8Gmvc&feature=youtu.be) of the VSTS YamlWriter task.
+
 A package or command line to output YAML based on input parameters. Take build variables and write them to files. 
 
 Updates existing files or create them from scratch. 
