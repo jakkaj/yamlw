@@ -7,8 +7,8 @@ var path = require('path');
 var yaml = require('js-yaml');
 
 
-var yamlwriter = function (file, dryrun, optionsstring) {
-    try {
+var yamlwriter = function (file, dryrun, optionsstring, savejson) {
+    try {       
 
         var doc;
 
@@ -52,7 +52,9 @@ var yamlwriter = function (file, dryrun, optionsstring) {
         }
 
         var d = yaml.safeDump(doc);
-
+        if(savejson){
+            d = JSON.stringify(doc);
+        }
         if (dryrun === false) {
             console.log(`Writing file: ${file}`)
             fs2.ensureDirSync(path.dirname(file));
